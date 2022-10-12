@@ -1,0 +1,22 @@
+<h2 class="mt-4">Product Details</h2>
+
+<!-- <div *ngIf="product" class="container">
+
+  <img src="{{product.img}}" alt="{{product.name}}">
+  <h3>{{ product.name }}</h3>
+  <h4>{{ product.price | currency:"EUR" }}</h4>
+  <p>{{ product.description }}</p>
+
+  <button class="btn btn-primary" (click)="addToCart()">Buy</button>
+</div> -->
+
+<div class="card" *ngIf="product">
+  <div class="card-body">
+    <img src="{{product.img}}" alt="{{product.name}}">
+    <hr>
+    <h3 class="card-title">{{ product.name }}</h3>
+    <h4>{{ product.price | currency:"EUR" }}</h4>
+    <p class="card-text">{{ product.description }}</p>
+    <button class="btn btn-primary" (click)="addToCart()">Buy</button>
+  </div>
+</div>
